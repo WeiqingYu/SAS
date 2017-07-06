@@ -1,2 +1,2 @@
 # SAS
-Python version of Smoothed Alternating Least Squares algorithm
+This is a Python realization of **S**moothed **A**lternating Least **S**quares (SAS) algorithm.
