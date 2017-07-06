@@ -25,8 +25,17 @@ Then use the command below to recover a partially observed matrix (numpy array).
 
 
 ## Parameters
-### Initialization
 
 One can specify five parameters at class initialization, i.e., *lam*, *mu*, *rank*, *thres*, and *maxit*. 
-![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
-* *lam*: $\lambda$
+
+* *lam*: The regularization term in ALS to prevent general overfitting. Default: 1.5.
+
+* *mu*: The smoothness regularization term to penalize turbulence in the data. Default: 2.
+
+* *rank*: The rank of decomposition. Default: 20.
+
+* *thres*: Termination threshold for the algorithm. Default: 0.001.
+
+* *maxit*: Maximum number of iteration. Default: 20.
+
+
