@@ -29,4 +29,4 @@ Then use the command below to recover a partially observed matrix (numpy array).
 
 One can specify five parameters at class initialization, i.e., *lam*, *mu*, *rank*, *thres*, and *maxit*. 
 
-* *lam*: \lambda
+* *lam*: $\lambda$
