@@ -15,7 +15,7 @@ To implement SAS in data recovery tasks, one can simply download the *sas.py* fi
 
 `from sas import SAS`
 
-Once imported the class, one can initialize the class with the following command.
+Numpy package is necessary to implement the *SAS* class. Once imported the class, one can initialize the class with the following command.
 
 `sasobject = SAS(lam=1.5,mu=2,rank=20,thres = 0.001, maxit = 20)`
 
@@ -38,4 +38,17 @@ One can specify five parameters at class initialization, i.e., *lam*, *mu*, *ran
 
 * *maxit*: Maximum number of iteration. Default: 20.
 
+## Input and Output
+### Input
 
+The input data for _.fit() function should be a partially observed numpy array, and values at missing entries should be *np.nan*.
+
+If the complete matrix (ground truth) is available, then one can set *withtrue* to be True and*data1* to be the complete matrix to observe the recovery accuracy. 
+
+The printed training and testing error for each iteration is measured by the mean absolute error.
+
+### Output
+
+Output of the fit function is the matrix decomposition of partially observed matrix. To obtain the recovered matrix, simply use the following command to combine the decomposition matrices.
+
+`result = np.matmul(res_A.transpose(),res_B)`
