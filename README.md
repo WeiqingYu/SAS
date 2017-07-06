@@ -12,4 +12,21 @@ SAS solves the matrix completion problem by implementing low-rank matrix decompo
 ## Usage
 
 To implement SAS in data recovery tasks, one can simply download the *sas.py* file and put it in the working directory. Then import the SAS class with the following command.
+
 `from sas import SAS`
+
+Once imported the class, one can initialize the class with the following command.
+
+`sasobject = SAS(lam=1.5,mu=2,rank=20,thres = 0.001, maxit = 20)`
+
+Then use the command below to recover a partially observed matrix (numpy array).
+
+`res_A, res_B = sasobject.fit(data = pomat)`
+
+
+## Parameters
+### Initialization
+
+One can specify five parameters at class initialization, i.e., *lam*, *mu*, *rank*, *thres*, and *maxit*. 
+
+* *lam*: \lambda
