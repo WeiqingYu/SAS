@@ -28,5 +28,5 @@ Then use the command below to recover a partially observed matrix (numpy array).
 ### Initialization
 
 One can specify five parameters at class initialization, i.e., *lam*, *mu*, *rank*, *thres*, and *maxit*. 
-
+![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 * *lam*: $\lambda$
